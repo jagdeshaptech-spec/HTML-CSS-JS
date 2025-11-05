@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background: linear-gradient(90deg, yellow, red);
+    align-items: center;
+}
+
+.navbar>.items>ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar>.btn>button {
+    border: none;
+    padding-inline: 10px;
+    padding-block: 3px;
+    border-radius: 50px;
+    font-size: 13px;
+    background: linear-gradient(90deg, rgb(1, 70, 75), rgb(37, 67, 3));
+    }
+

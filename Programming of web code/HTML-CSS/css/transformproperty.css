@@ -1,0 +1,13 @@
+span {
+    background-color: red;
+    width: 180spx;
+    height: 250px;
+    display: inline-block;
+    /* transform: translateX(30px); */
+    /* transform: translateY(50px); */
+    /* transform: rotate(37deg); */
+    /* transform: skew(40deg); */
+    transform: scale(1.4);
+    
+}
+

@@ -1,0 +1,13 @@
+*{
+    background-color: blue;
+}
+#unique{
+    background-color: blueviolet;
+}
+.common{
+    background-color: rgb(81, 197, 28);
+}
+
+p{
+    color: burlywood;
+}

@@ -1,0 +1,10 @@
+.animation h1{
+    animation: out 1s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes out{
+    0%{
+        
+    }
+}

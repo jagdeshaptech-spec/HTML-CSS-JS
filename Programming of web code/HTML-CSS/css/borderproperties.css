@@ -1,0 +1,7 @@
+.Borderdemo{
+    width: 200px;
+    height: 230px;
+    border-width: 2px;
+    border-style: double;
+    border-color: blue;
+}

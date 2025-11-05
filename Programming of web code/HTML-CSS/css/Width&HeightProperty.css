@@ -1,0 +1,11 @@
+#container{
+    background-color: blueviolet;
+    width: 200px;
+    height: 230px;
+}
+
+#container .subcontainer{
+    background-color: blue;
+    width: 140px;
+    height: 200px;
+} 

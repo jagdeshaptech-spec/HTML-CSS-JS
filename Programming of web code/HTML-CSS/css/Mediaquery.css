@@ -1,0 +1,13 @@
+.media h1{
+background-color: green;
+color: white;
+width: 600px;
+height: 400px;
+}
+
+@media screen and (max-width: 400px){
+    .media h1{
+        background-color: aqua;
+        color: black;
+    }
+}

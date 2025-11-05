@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap');
+p{
+    font-size: 25px;
+    font-weight: 300;
+    font-style: italic;
+    font-family: "Playwrite DE SAS", cursive;
+    text-decoration: dashed;
+    text-align: center;
+}
