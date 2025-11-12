@@ -9,3 +9,5 @@ console.log(you)
 
 let items = ["Food", "Petrol", "Rackets"] //Array
 console.log(items[1])
+
+let 
