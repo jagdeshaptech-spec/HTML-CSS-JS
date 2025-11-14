@@ -8,4 +8,6 @@ const Subjects = {
     Sub_Class: function() {
         return [this.Sub_1, this.Sub_2, this.Sub_3, this.Sub_4, this.Sub_5, this.Sub_6];
     }
-}
+};
+
+console.log(Subjects.Sub_Class());
