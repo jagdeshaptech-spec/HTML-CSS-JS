@@ -1,7 +1,59 @@
-.Borderdemo{
-    width: 200px;
-    height: 230px;
-    border-width: 2px;
-    border-style: double;
-    border-color: blue;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery To-Do List</title>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function(){
+      // Add new item
+      $("#addItemButton").click(function(){
+        const newItemText = $("#newItemInput").val();
+        if(newItemText){
+          const newItem = $("<li></li>").text(newItemText);
+          $("#todoList").append(newItem); // ✅ matches correct ID
+          $("#newItemInput").val("");
+        }
+      });
+
+      // Toggle completed class on click
+      $("#todoList").on("click", "li", function(){
+        $(this).toggleClass("completed");
+      });
+
+      // Remove all completed items
+      $("#removeCompletedButton").click(function(){
+        $(".completed").remove();
+      });
+    });
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .completed {
+      text-decoration: line-through;
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>jQuery Click Events - To-Do List Example</h1>
+
+  <input type="text" id="newItemInput" placeholder="Enter new item">
+  <button id="addItemButton">Add Item</button>
+  <button id="removeCompletedButton">Remove Completed Items</button>
+
+  <!-- ✅ Make sure the ID matches exactly -->
+  <ul id="todoList"></ul>
+
+</body>
+</html>
